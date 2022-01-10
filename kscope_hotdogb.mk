@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Kaleidoscope stuff.
+$(call inherit-product, vendor/kscope/target/product/mobile.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hotdogb
+PRODUCT_NAME := kscope_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := HD1905
+PRODUCT_MODEL := HD1900
 PRODUCT_MANUFACTURER := OnePlus
 
 PRODUCT_SYSTEM_NAME := OnePlus7T
@@ -29,8 +29,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Build info
 BUILD_FINGERPRINT := "OnePlus/OnePlus7T_EEA/OnePlus7T:10/QKQ1.190716.003/1909250940:user/release-keys"
